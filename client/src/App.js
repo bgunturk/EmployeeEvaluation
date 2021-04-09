@@ -1,18 +1,26 @@
-// import './App.css';
+import './index.css';
 import Home from './home';
 import Detaits from './details';
-import { BrowserRouter as Router, Switch } from 'react-router-dom';
-
+import { BrowserRouter as Router, Switch , Route, BrowserRouter} from 'react-router-dom';
+import Header from './components/header';
 
 function App() {
   return (
-    <div className="App">
-      <Switch>
-        <Router exact path="/" component={Home} />
-        <Router exact path="/details" component={Detaits} />
-      </Switch>
+    <div className="container mx-auto">
+    <Header />
     </div>
+  
+ 
   );
 }
 
 export default App;
+/*
+<BrowserRouter>
+<Header />
+<Switch>
+  <Route exact path="/" component={Home} />
+  <Route exact path="/details" component={Detaits} />
+</Switch>
+</BrowserRouter>
+*/
