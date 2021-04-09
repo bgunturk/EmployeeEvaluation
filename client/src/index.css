@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+homeContainer {
+  height: 800px;
+  weight: 100%;
+  max-width: 800px;
+  border: 1;
+}
