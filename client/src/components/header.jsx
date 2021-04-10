@@ -1,13 +1,11 @@
 import React from 'react';
 
-export default function header() {
+const Header = () => {
   return (
-    <div className="container">
-      <div class="grid gap-4 grid-cols-2">
-        <div class="flex-1 ...">1</div>
-        <div class="flex-1 ...">2</div>
-        <div class="flex-1 ...">3</div>
-      </div>
+    <div>
+      <h1 className="font-weight-light  ">Restaurant Finder</h1>
     </div>
   );
-}
+};
+
+export default Header;
